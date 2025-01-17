@@ -57,7 +57,10 @@ nav{
 }
 
 .one {
+    margin-top: 30px;
     margin-right: auto;
+    height: 19px;
+    width: 61.09px;
 }
 
 .two {
@@ -359,6 +362,7 @@ a {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
     gap: 20px; 
+
 }
 
 
@@ -390,12 +394,23 @@ a {
     flex-direction: column;
     justify-content: space-between;
     flex-grow: 1; 
+    border-radius: 20px;
+    overflow: hidden;
+    border: none;
 
 }
 
 .Activités-cards .card-title {
     margin-top: 0px;
     margin-bottom: 4px;
+}
+
+.Acard {
+    background-color: white;
+    border-color: none;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 
@@ -427,23 +442,48 @@ a {
     
 }
 
-.footer-container{
-    background-color: var(--main-bg-color) ;
+
+.footer-container {
+    
+    background-color: var(--main-bg-color);
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-around;
-    margin-left: 50px;
-    margin-top: 50px;
-    margin-right: 50px;
-}
-
-.navfoot{
-    display: flex;
-	flex-direction: column;
     flex-wrap: nowrap;
-
+    justify-content: flex-start;
+    gap: 250px; 
+    padding: 20px 50px; 
+    margin: 0 auto; 
+    padding-right: 250px;
+    margin-top: 75px;
+    
 }
+
+.navfoot {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 2px; 
+}
+
+.navfoot h3 {
+    font-weight: bold;
+    margin: 0 0 10px 0; 
+}
+
+.navfoot p {
+    margin: 0; 
+    font-size: large; 
+}
+
+
+.navfoot h3 a, .navfoot p a {
+    cursor: pointer; 
+}
+
+
+
+
+
 
 
 
@@ -485,6 +525,65 @@ a {
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .Activités-cards .card {
+        height: 50%;
+    }
+
+    .footer-container {
+    
+        background-color: var(--main-bg-color);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        gap: 100px; 
+        padding: 20px 50px; 
+        margin: 0 auto; 
+        padding-right: 250px;
+        margin-top: 75px;
+        
+    }
+
+    .Activités {
+        width: 50%;
+    }
+    
+    .Activités-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 30px;
+        padding-top: 50px;
+        font-size: 14px;
+    }
+    
+    .Activités-cards {
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px; 
+    
+    }
+    
+    
+    .Activités-cards .card {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        height: 270px;
+        border-radius: 20px;
+        overflow: hidden;
+        border: 0 solid;
+    }
+    
+    
+    
+    .Activités-cards img {
+        height: 200px; 
+        object-fit: cover; 
+        width: 193.5px;
+        border-radius: 20px 20px 0 0;
     }
 }
 
